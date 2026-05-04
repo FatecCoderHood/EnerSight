@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lista de Entidades Geográficas</title>
+  <style>
+    :root{--bg:#f6f7fb;--card:#ffffff;--muted:#6b7280;--accent:#0f4c81;--accent-2:#0b6ba8;--border:#e6e9ef;--row-odd:#fbfcff}
+    *{box-sizing:border-box}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:linear-gradient(180deg,var(--bg), #eef2f6 120px); color:#111827; margin:0; padding:32px}
+    .container{max-width:1100px;margin:0 auto}
+    .card{background:var(--card);border-radius:10px;padding:20px;box-shadow:0 6px 18px rgba(15,30,70,0.08);border:1px solid var(--border)}
+    .table-wrap{overflow:auto;border-radius:8px;margin-top:12px}
+    table{width:100%;border-collapse:separate;border-spacing:0;min-width:920px}
+    th,td{padding:12px 16px;text-align:left;vertical-align:middle;border-bottom:1px solid var(--border)}
+    thead th{position:sticky;top:0;background:linear-gradient(180deg,var(--accent), var(--accent-2));color:#fff;font-weight:600;letter-spacing:.2px;text-transform:uppercase;font-size:12px;border-bottom:2px solid rgba(0,0,0,0.06)}
+    tbody tr:nth-child(odd){background:var(--row-odd)}
+    tbody tr:hover{background:linear-gradient(90deg, rgba(11,107,168,0.03), rgba(15,76,129,0.02))}
+    td.sigla{width:110px;font-weight:600;color:var(--accent)}
+    td.tipo{width:240px;color:var(--muted)}
+    .caption{display:flex;justify-content:space-between;align-items:center}
+    .caption h2{margin:0;font-size:18px}
+    .caption .meta{color:var(--muted);font-size:13px}
+    @media (max-width:720px){.container{padding:0 12px} thead th:nth-child(4), tbody td:nth-child(4){display:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="caption">
+        <h2>2.4.1 Lista de Entidades Geográficas</h2>
+        <div class="meta">Tabela de referência — EnerSight</div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Tipo/ Nome do Conjunto de Informações</th>
+              <th>Nome</th>
+              <th>Sigla</th>
+              <th>Tipo de Feição</th>
+              <th>Descrição</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Áreas de Interesse/ Área de Atuação</td>
+              <td>Área de Atuação</td>
+              <td class="sigla">ARAT</td>
+              <td class="tipo">Polígono</td>
+              <td>Cada feição desta entidade representa a área de atuação oficial estabelecida pelo contrato da distribuidora.</td>
+            </tr>
+            <tr>
+              <td>Áreas de Interesse/ Conjunto de Unidades Consumidoras</td>
+              <td>Conjunto</td>
+              <td class="sigla">CONJ</td>
+              <td class="tipo">Polígono</td>
+              <td>Cada feição desta entidade representa a área de um conjunto de unidades consumidoras abrangendo a área de atuação, e eventuais áreas de atendimento precário da distribuidora.</td>
+            </tr>
+            <tr>
+              <td>Áreas de Interesse/ Subestação</td>
+              <td>Subestação</td>
+              <td class="sigla">SUB</td>
+              <td class="tipo">Polígono</td>
+              <td>Cada feição desta entidade representa a área geográfica que delimita o espaço físico ocupado por uma determinada subestação de interesse.</td>
+            </tr>
+            <tr>
+              <td rowspan="3">Acessante/ Unidade Consumidora</td>
+              <td>Unidade Consumidora de Baixa Tensão</td>
+              <td class="sigla">UCBT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização da unidade consumidora ou ponto de conexão com tensão de fornecimento em baixa tensão existente no sistema de distribuição.</td>
+            </tr>
+            <tr>
+              <td>Unidade Consumidora de Média Tensão</td>
+              <td class="sigla">UCMT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização da unidade consumidora ou ponto de conexão com tensão de fornecimento em média tensão existente no sistema de distribuição.</td>
+            </tr>
+            <tr>
+              <td>Unidade Consumidora de Alta Tensão</td>
+              <td class="sigla">UCAT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização da unidade consumidora ou ponto de conexão com tensão de fornecimento em alta tensão existente no sistema de distribuição.</td>
+            </tr>
+            <tr>
+              <td rowspan="3">Acessante/ Unidade Geradora</td>
+              <td>Unidade Geradora de Baixa Tensão</td>
+              <td class="sigla">UGBT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização da unidade geradora ou ponto de conexão com tensão de conexão em baixa tensão existente no sistema de distribuição.</td>
+            </tr>
+            <tr>
+              <td>Unidade Geradora de Média Tensão</td>
+              <td class="sigla">UGMT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização da unidade geradora ou ponto de conexão com tensão de conexão em média tensão existente no sistema de distribuição.</td>
+            </tr>
+            <tr>
+              <td>Unidade Geradora de Alta Tensão</td>
+              <td class="sigla">UGAT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização da unidade geradora ou ponto de conexão com tensão de conexão em alta tensão existente no sistema de distribuição.</td>
+            </tr>
+            <tr>
+              <td>Rede/ Estrutura de Suporte da Rede</td>
+              <td>Ponto Notável</td>
+              <td class="sigla">PONNOT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização das estruturas de suporte das redes e dos equipamentos de distribuição de energia elétrica</td>
+            </tr>
+            <tr>
+              <td rowspan="3">Rede/ Segmento de Rede</td>
+              <td>Segmento do Sistema de Distribuição de Baixa Tensão</td>
+              <td class="sigla">SSDMT</td>
+              <td class="tipo">Linha</td>
+              <td>Cada feição desta entidade representa o traçado de um segmento de rede de distribuição em nível de baixa tensão entre duas estruturas de suporte da rede.</td>
+            </tr>
+            <tr>
+              <td>Segmento do Sistema de Distribuição de Média Tensão</td>
+              <td class="sigla">SSDMT</td>
+              <td class="tipo">Linha</td>
+              <td>Cada feição desta entidade representa o traçado de um segmento de rede de distribuição em nível de média tensão entre duas estruturas de suporte da rede.</td>
+            </tr>
+            <tr>
+              <td>Segmento do Sistema de Distribuição de Alta Tensão</td>
+              <td class="sigla">SSDAT</td>
+              <td class="tipo">Linha</td>
+              <td>Cada feição desta entidade representa o traçado de um segmento de rede de distribuição em nível de alta tensão entre duas estruturas de suporte da rede.</td>
+            </tr>
+            <tr>
+              <td rowspan="3">Equipamento/ Compensador de Reativos</td>
+              <td>Unidade Compensadora de Reativo de Baixa Tensão</td>
+              <td class="sigla">UNCRBT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização de uma unidade compensadora de reativo instalada na rede de distribuição em nível de baixa tensão.</td>
+            </tr>
+            <tr>
+              <td>Unidade Compensadora de Reativo de Média Tensão</td>
+              <td class="sigla">UNCRMT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização de uma unidade compensadora de reativo instalada na rede de distribuição em nível de média tensão.</td>
+            </tr>
+            <tr>
+              <td>Unidade Compensadora de Reativo de Alta Tensão</td>
+              <td class="sigla">UNCRAT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização de uma unidade compensadora de reativo instalada na rede de distribuição em nível de alta tensão.</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Equipamento/ Regulador</td>
+              <td>Unidade Reguladora de Média Tensão</td>
+              <td class="sigla">UNREMT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização de uma unidade reguladora instalada na rede de distribuição em nível de média tensão.</td>
+            </tr>
+            <tr>
+              <td>Unidade Reguladora de Alta Tensão</td>
+              <td class="sigla">UNREAT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização de uma unidade reguladora instalada na rede de distribuição em nível de alta tensão.</td>
+            </tr>
+            <tr>
+              <td rowspan="3">Equipamento/ Seccionador de Rede</td>
+              <td>Unidade Seccionadora de Baixa Tensão</td>
+              <td class="sigla">UNSEBT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização de uma unidade seccionadora instalada na rede de distribuição em nível de baixa tensão.</td>
+            </tr>
+            <tr>
+              <td>Unidade Seccionadora de Média Tensão</td>
+              <td class="sigla">UNSEMT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização de uma unidade seccionadora instalada na rede de distribuição em nível de média tensão.</td>
+            </tr>
+            <tr>
+              <td>Unidade Seccionadora de Alta Tensão</td>
+              <td class="sigla">UNSEAT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização de uma unidade seccionadora instalada na rede de distribuição em nível de alta tensão.</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Equipamento/ Transformador</td>
+              <td>Unidade Transformadora de Média Tensão</td>
+              <td class="sigla">UNTRMT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização de uma unidade de transformação em média tensão instalada no sistema de distribuição</td>
+            </tr>
+            <tr>
+              <td>Unidade Transformadora de Alta Tensão</td>
+              <td class="sigla">UNTRAT</td>
+              <td class="tipo">Ponto</td>
+              <td>Cada feição desta entidade representa a localização de uma unidade de transformação em alta tensão instalada no sistema de distribuição</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
