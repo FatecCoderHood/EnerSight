@@ -235,8 +235,8 @@ For a User Story to be ready to start in a sprint, the following criteria must b
 
 <details>
   <summary><strong>Sprint 2</strong></summary>
-  <img width="1581" height="574" alt="Sprint 2 - Burndown graph" src="#" />
-
+  <img width="1605" height="503" alt="Sprint 2 - Burndown graph" src="image/brundown-sprint2.png" />
+  
 </details>
 <details>
   <summary><strong>Sprint 3</strong></summary>
