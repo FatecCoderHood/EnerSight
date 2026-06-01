@@ -242,7 +242,7 @@ For a User Story to be ready to start in a sprint, the following criteria must b
 </details>
 <details>
   <summary><strong>Sprint 3</strong></summary>
-  <img width="1605" height="503" alt="Sprint 3 - Burndown graph" src="image/brundown-sprint3.png" />
+  <img width="1605" height="503" alt="Sprint 3 - Burndown graph" src="image/brundown-sprint3.PNG" />
 
 </details>
 
@@ -287,7 +287,7 @@ For a User Story to be ready to start in a sprint, the following criteria must b
 <details>
   <summary><b>Branching</b></summary>
 
-<img width="1900" height="1010" alt="Confluence-doc-branch-flow" src="image/branchFlow.png" />
+<img width="1900" height="1010" alt="Confluence-doc-branch-flow" src="image/branchFlow.PNG" />
 
 #### **Logic**
 
