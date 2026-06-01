@@ -32,9 +32,11 @@
 
 | Member | Role | Social |
 |-------------| - |---------------|
+| Renato Mendes | Scrum Master | <a href="https://www.linkedin.com/in/renato-mendes-61a6481a4"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> <a href="https://github.com/RenatoCMMendes"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a> |
 | Juan Cursino  | Product Owner | <a href="https://www.linkedin.com/in/juan-cursino"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> <a href="https://github.com/JuanCursino"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a> |
 | Rafael Trevizoli | Developer | <a href="https://www.linkedin.com/in/rafael-trevizoli/"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> <a href="https://github.com/rtrevizoli"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a> |
-| Renato Mendes | Scrum Master | <a href="https://www.linkedin.com/in/renato-mendes-61a6481a4"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> <a href="https://github.com/RenatoCMMendes"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a> |
+| Vinicius Monteiro | Developer | <a href="https://www.linkedin.com/in/vasmonteiro"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> <a href="https://github.com/viniciusvasmonteiro"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a> |
+| Lucas Henrique | Developer | <a href="https://www.linkedin.com/in/lucashenriqueco"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a> <a href="https://github.com/LucasHCOliveira7"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"></a> |
 
 </div>
 
@@ -164,9 +166,9 @@ EnerSight was designed with an architecture that supports future evolution, incl
 
 | Id | Prioridade | User Story | Estimativa | Sprint |
 | -- | ---------- | ---------- | ---------- | ------ |
-| [ES-19: Performance ranking](https://coderhood.atlassian.net/browse/ES-19) | Highest | As a user of Tecsys’ energy analytics system, I want to view an analytical table containing operational indicators of the electrical network and market estimates (TAM and SAM), so that it is possible to identify regions with higher operational risk and greater revenue recovery potential. | 8 | 2 |
+| [ES-19: Performance ranking](https://coderhood.atlassian.net/browse/ES-19) | Medium | As a user of Tecsys’ energy analytics system, I want to view an analytical table containing operational indicators of the electrical network and market estimates (TAM and SAM), so that it is possible to identify regions with higher operational risk and greater revenue recovery potential. | 8 | 2 |
 | [ES-20: Heatmap](https://coderhood.atlassian.net/browse/ES-20) | Highest | As a user of Tecsys’ energy analytics system, I want to view a heatmap displaying electrical network quality and loss indicators, so that I can identify regions with higher operational risk and greater financial impact. | 8 | 2 |
-| [ES-23: Data collection and processing](docs/Data%20collection%20and%20processing.md) | Highest | As a user of Tecsys’ energy analytics system, I want the system to automatically collect public data from ANEEL regarding energy quality and losses, so that this information can be stored and used later. | 5 | 2 |
+| [ES-23: Data collection and processing](docs/Data%20collection%20and%20processing.md) | Lowest | As a user of Tecsys’ energy analytics system, I want the system to automatically collect public data from ANEEL regarding energy quality and losses, so that this information can be stored and used later. | 5 | 2 |
 
 ### Definition of Done (DoD)
 For a User Story to be considered **complete**, the following criteria must be met:
@@ -203,8 +205,8 @@ For a User Story to be ready to start in a sprint, the following criteria must b
 | Id | Prioridade | User Story | Estimativa | Sprint |
 | -- | ---------- | ---------- | ---------- | ------ |
 | [ES-21: User management](https://coderhood.atlassian.net/browse/ES-21) | Medium | As a user of Tecsys’ energy analytics system, I want to be able to register by providing basic platform access information, so that I can request access to the system and use its analytical features after administrative approval. | 8 | 3 |
-| [ES-22: Auditing and logging](https://coderhood.atlassian.net/browse/ES-22) | Medium | As an administrator of Tecsys’ energy analytics system, I want the system to record logs of critical operations performed on the platform, so that it is possible to trace activities, identify failures, and ensure auditability of the actions carried out by users. | 3 | 3 |
-| [ES-25: Forecasting agent](https://coderhood.atlassian.net/browse/ES-25) | Lowest | As an analyst of Tecsys’ energy analytics system, I want to use an AI-based forecasting agent to estimate future trends in electrical network indicators, so that I can anticipate regions with a higher risk of outages or energy losses. | 8 | 3 |
+| [ES-22: Auditing and logging](https://coderhood.atlassian.net/browse/ES-22) | Lowest | As an administrator of Tecsys’ energy analytics system, I want the system to record logs of critical operations performed on the platform, so that it is possible to trace activities, identify failures, and ensure auditability of the actions carried out by users. | 3 | 3 |
+| [ES-25: Forecasting agent](https://coderhood.atlassian.net/browse/ES-25) | Highest | As an analyst of Tecsys’ energy analytics system, I want to use an AI-based forecasting agent to estimate future trends in electrical network indicators, so that I can anticipate regions with a higher risk of outages or energy losses. | 8 | 3 |
 
 ### Definition of Done (DoD)
 For a User Story to be considered **complete**, the following criteria must be met:
@@ -240,7 +242,7 @@ For a User Story to be ready to start in a sprint, the following criteria must b
 </details>
 <details>
   <summary><strong>Sprint 3</strong></summary>
-  <img width="1605" height="503" alt="Sprint 3 - Burndown graph" src="#" />
+  <img width="1605" height="503" alt="Sprint 3 - Burndown graph" src="image/brundown-sprint3.png" />
 
 </details>
 
@@ -252,10 +254,10 @@ For a User Story to be ready to start in a sprint, the following criteria must b
 - [x] March 16 to April 05 - Sprint 1
 - [x] April 06 to April 10 - Sprint Review / Planning
 - [x] April 13 to May 03 - Sprint 2
-- [ ] May 04 to May 08 - Sprint Review / Planning
-- [ ] May 11 to May 31 - Sprint 3
-- [ ] June 01 to June 05 - Sprint Review
-- [ ] June 11 - Project Fair and Final API Presentation
+- [x] May 04 to May 08 - Sprint Review / Planning
+- [x] May 11 to May 31 - Sprint 3
+- [x] June 01 to June 05 - Sprint Review
+- [ ] June 25 - Project Fair and Final API Presentation
 
 <br>
 
@@ -285,7 +287,7 @@ For a User Story to be ready to start in a sprint, the following criteria must b
 <details>
   <summary><b>Branching</b></summary>
 
-<img width="1900" height="1010" alt="Confluence-doc-branch-flow" src="#" />
+<img width="1900" height="1010" alt="Confluence-doc-branch-flow" src="image/branchFlow.png" />
 
 #### **Logic**
 
