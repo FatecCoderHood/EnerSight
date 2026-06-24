@@ -15,6 +15,7 @@
   <a href="#calendar-sprints-backlog"> Sprints Backlog </a> •
   <a href="#hourglass_flowing_sand-roadmap"> Roadmap </a>•
   <a href="#computer-tech-stack"> Tech Stack </a> •
+  <a href="#rocket-running-the-project"> Running the Project </a> •
   <a href="#gear-branching-and-commit-standard-strategies"> Branching and Commit Standard Strategies </a> • 
   <a href="#gear-documentation"> Documentation </a> •
 
@@ -279,6 +280,33 @@ For a User Story to be ready to start in a sprint, the following criteria must b
 ![GitHub](https://img.shields.io/badge/GitHub-Repo-181717?logo=github&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-Design-F24E1E?logo=figma&logoColor=white)
 </div>
+
+<br>
+
+<h1 id="rocket-running-the-project">🚀 Running the Project</h1>
+
+EnerSight is split into five independently-run projects. Each has its own README with what it
+does, how to run it, and how to run its tests — start there for details.
+
+| Project | What it is | Run it via |
+|---|---|---|
+| [`frontend/`](frontend/README.md) | Vue 3 + TypeScript SPA | `npm run dev` |
+| [`backend/enersight-api/`](backend/enersight-api/README.md) | Geo/data REST API (OAuth2 resource server) | `./mvnw spring-boot:run` |
+| [`backend/enersight-auth/`](backend/enersight-auth/README.md) | Identity provider — login, JWT issuance, user management | `docker compose up enersight-auth` |
+| [`backend/enersight-worker/`](backend/enersight-worker/README.md) | ANEEL data ingestion (Python) | `docker compose up enersight-worker` |
+| [`backend/enersight-temporal-series/`](backend/enersight-temporal-series/README.md) | Prophet forecasting pipeline + read API | `docker compose up enersight-temporal-series-api` |
+
+All backend services that have a Docker image are wired into one compose file:
+
+```bash
+cd backend/docker
+docker compose up -d
+```
+
+`enersight-api` and the frontend don't have Docker images yet — run them directly (`./mvnw
+spring-boot:run` and `npm run dev` respectively) against the dockerized databases. See each
+project's README for environment variables, manual verification steps, and how to run that
+project's tests.
 
 <br>
 
